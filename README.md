@@ -16,7 +16,7 @@ It is a hobby project to setup a few dummy cypress tests to walk through HiQ web
 * Go to path where you want to setup Cypress tests (Eg: /Users/<user>/Documents)
 * $ git clone https://github.com/yunlong276huang/hiq_cypress.git
 * $ cd HIQ_CYPRESS
-* $ npm install cypress (This installs Cypress and other dependencies)the root of your project to ensure cypress is installed in the correct directory.
+* $ npm install (This installs Cypress and other dependencies)the root of your project to ensure cypress is installed in the correct directory.
 * $ npx cypress -v (Check the version of Cypress)
 * $ npx cypress open  (Opens Cypress Test Runner) or
 * $ npx cypress open --env configFile=hiq
@@ -29,7 +29,7 @@ It is a hobby project to setup a few dummy cypress tests to walk through HiQ web
     * $ npx cypress run --browser chrome (Run all test on Chrome browser)
     * $ npx cypress run --spec 'cypress/integration/xxx.js
     
-# Run Cypress in Dockers#
+# Run Cypress in Dockers #
 * Pre-requisite: Docker should be installed in the machine
 * $ cd cypress-automation-responsive
 * Run on Command line
