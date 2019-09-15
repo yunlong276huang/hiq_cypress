@@ -1,5 +1,5 @@
 # hiq_cypress #
-It is a hobby project to setup a few dummy cypress tests to walk through HiQ webpages.
+It is a hobby project to setup a few dummy cypress tests to walk through HiQ Sweden landing page.
 
 # About Cypress #
 * An open source, front-end testing tool, built for the modern web
