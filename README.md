@@ -27,5 +27,5 @@ It is a hobby project to setup a few cypress tests to walk through HiQ Sweden la
 * Examples of running tests on CLI: 
     * $ npx cypress run (Run all test on Electron browser (Headless))
     * $ npx cypress run --browser chrome (Run all test on Chrome browser)
-    * $ npx cypress run --spec 'cypress/integration/xxx.js
+    * $ npx cypress run --spec 'cypress/integration/general/02_landing.spec.js'
 
