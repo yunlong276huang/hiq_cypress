@@ -6,8 +6,8 @@ describe(Cypress.env('brand').toUpperCase() + ' - landing page', function () {
 		cy.setCookie('hiqCookie', '1')
 	})
 
-	after(function () {
-        cy.clearCookie('hiqCookie')
+	afterEach(function () {
+		cy.clearCookie('hiqCookie')
 	})
 
 	it('Verify header section', function () {

@@ -1,12 +1,11 @@
 describe(Cypress.env('brand').toUpperCase() + ' - cookie', function () {
 
-        beforeEach(function () {
+        before(function () {
             cy.visit('/', { failOnStatusCode: false })
-            cy.clearCookie('hiqCookie')
+            cy.clearCookie('hiqCookie')         
         })
 
         after(function () {
-            cy.clearCookie('hiqCookie')
         })
 
         it('Verify cookie banner', function () {
