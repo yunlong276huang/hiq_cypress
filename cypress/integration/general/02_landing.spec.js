@@ -60,7 +60,7 @@ describe(Cypress.env('brand').toUpperCase() + ' - landing page', function () {
 		cy.get('.overlaylang').should('not.visible')
 	})
 
-	const search_keyword = ['development', 'frontend']
+	const search_keyword = ['development', 'frontend', 'devops', 'cloud', 'testautomatiserare']
 	search_keyword.forEach((keyword) => {
 		it('C2429 Verify page search with keyword ' + keyword, function () {
 			cy.get('button#trigger-searchoverlay').scrollIntoView({ force: true }).click()
