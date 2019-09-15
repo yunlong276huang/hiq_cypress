@@ -24,7 +24,7 @@ function getConfigurationByFile (file) {
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
-  const file = config.env.configFile || 'hiq'
+  const file = config.env.configFile || 'hiqsweden'
   return getConfigurationByFile(file)
 
 }

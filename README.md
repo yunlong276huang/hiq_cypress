@@ -19,7 +19,7 @@ It is a hobby project to setup a few dummy cypress tests to walk through HiQ web
 * $ npm install (This installs Cypress and other dependencies)the root of your project to ensure cypress is installed in the correct directory.
 * $ npx cypress -v (Check the version of Cypress)
 * $ npx cypress open  (Opens Cypress Test Runner) or
-* $ npx cypress open --env configFile=hiq
+* $ npx cypress open --env configFile=hiqsweden
 
 # Run Cypress Tests #
 * Run one test or all tests from Cypress Test Runner (using GUI) on Chrome or Electron browser
