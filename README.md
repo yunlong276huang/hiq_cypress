@@ -1,5 +1,5 @@
 # hiq_cypress #
-It is a hobby project to setup a few dummy cypress tests to walk through HiQ Sweden landing page.
+It is a hobby project to setup a few cypress tests to walk through HiQ Sweden landing page.
 
 # About Cypress #
 * An open source, front-end testing tool, built for the modern web
@@ -28,9 +28,4 @@ It is a hobby project to setup a few dummy cypress tests to walk through HiQ Swe
     * $ npx cypress run (Run all test on Electron browser (Headless))
     * $ npx cypress run --browser chrome (Run all test on Chrome browser)
     * $ npx cypress run --spec 'cypress/integration/xxx.js
-    
-# Run Cypress in Dockers #
-* Pre-requisite: Docker should be installed in the machine
-* $ cd cypress-automation-responsive
-* Run on Command line
-docker run -it -v $PWD:/HIQ_CYPRESS -w /HIQ_CYPRESS cypress/included:3.4.1 --env configFile=hiq
+
