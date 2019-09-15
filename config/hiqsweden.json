@@ -1,0 +1,39 @@
+{
+    "baseUrl": "https://www.hiq.se/",
+    "env": {
+        "brand":"hiqsweden", 
+        "landing-language-options":"3",
+            "landing-language-option-0":"https://www.hiq.se/",
+            "landing-language-option-1":"https://www.hiq.se/en/",
+            "landing-language-option-2":"https://www.hiq.se/fi/",
+        "hamburger-menu-items":"7",
+            "hamburger-menu-item-0":"/case/",
+            "hamburger-menu-item-1":"/ideer/",
+            "hamburger-menu-item-2":"/om-oss/",
+            "hamburger-menu-item-3":"/nyheter/",
+            "hamburger-menu-item-4":"/jobb/",
+            "hamburger-menu-item-5":"/kontakta-oss/",
+            "hamburger-menu-item-6":"/investor-relations/",       
+        "main-case-items":"3",
+            "main-case-item-0":"/case/det-digitala-korkortet/",
+            "main-case-item-1":"/case/lego-house/",
+            "main-case-item-2":"/case/lojalitetsportal-circle-k/",
+        "footer-social-media-items":"4",
+            "footer-social-media-item-0":"https://www.facebook.com/HiQSverige/",
+            "footer-social-media-item-1":"https://www.instagram.com/hiqinternat/",
+            "footer-social-media-item-3":"https://twitter.com/hiqinternat",
+            "footer-social-media-item-4":"https://se.linkedin.com/company/hiq",
+        "footer-link-items":"5", 
+            "footer-link-item-0":"/investor-relations/aktieagarservice/",   
+            "footer-link-item-1":"/investor-relations/info--och-ir--kontakt/", 
+            "footer-link-item-2":"/offentliga-ramavtal/", 
+            "footer-link-item-3":"https://hiq.se/investor-relations/info--och-ir--kontakt#subscription-form", 
+            "footer-link-item-4":"/integritetspolicy/", 
+        "RETRIES":2 
+      },
+      "reporterOptions": {
+          "runName":"hiqsweden"
+       },
+      "integrationFolder": "cypress/integration/general"
+  }
+  
