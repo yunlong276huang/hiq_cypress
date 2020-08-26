@@ -18,10 +18,9 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-require('cypress-plugin-retries')
 
 Cypress.Cookies.defaults({
-  whitelist: ['hiqCookie']
+  preserve: ['hiqCookie']
 })
 
 if (Cypress.env('url')) {
