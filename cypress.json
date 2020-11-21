@@ -1,19 +1,26 @@
 {
   "projectId": "dummy",
   "chromeWebSecurity": false,
-  "defaultCommandTimeout":14000,
-  "pageLoadTimeout": 20000,
+  "defaultCommandTimeout":15000,
+  "pageLoadTimeout": 30000,
   "viewportWidth":1024,
   "viewportHeight":768,
   "requestTimeout":10000,
-  "reporter": "mochawesome",
-  "screenshotsFolder":"mochawesome-report",
+  "responseTimeout": 30000,
+  "trashAssetsBeforeRuns": true,
+  "waitForAnimations": true,
+  "retries":1,
+  "reporter": "cypress-multi-reporters",
+  "screenshotsFolder":"screenshots",
   "reporterOptions": {
-    "reportDir": "cypress/results",
-    "overwrite": false,
-    "html": true,
-    "inline":true,
-    "code": false,
-    "json": false
-  } 
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "cypress/reports/mocha",
+      "quite": true,
+      "inline":true,
+      "overwrite": false,
+      "html": false,
+      "json": true
+    }
+  }
 }
