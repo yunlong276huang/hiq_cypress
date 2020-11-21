@@ -11,7 +11,7 @@ describe(Cypress.env('brand').toUpperCase() + ' - landing page', function () {
 	})
 
 	it('Verify header section', function () {
-		// Verify HIQ login visible
+		// Verify HIQ logo visible
 		cy.get('.header-bg-left').scrollIntoView({ force: true }).should('be.visible')
 
 		// Verify language button visible
