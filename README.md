@@ -31,8 +31,5 @@ It is designed for an introduction course on cypress at HiQ HiCollegue.
     * click one spec to run that spec only
 * Tests can be run also using CLI
     * $ npx cypress run (Run all tests on Electron browser Headless)
-    * $ npx cypress run -b chrome (Run all tests on Chrome browser Header)
-    * $ npx cypress run -b chrome --headless (Run all tests on Chrome browser Headless)
     * $ npx cypress run --env configFile=hiqsweden (To run tests per env or brand)
-    * $ npx cypress run --spec 'cypress/integration/general/02_landing.spec.js'
 * Run test with custom command (To be configured in package.json)
