@@ -1,5 +1,5 @@
 # hiq_cypress #
-It is a hobby project to setup a few cypress tests to walk through HiQ Sweden landing page.
+It is designed for an introduction course on cypress at HiQ HiCollegue.
 
 # About Cypress #
 * An open source, front-end testing tool, built for the modern web
@@ -15,7 +15,7 @@ It is a hobby project to setup a few cypress tests to walk through HiQ Sweden la
 * Open Terminal
 * Go to path where you want to setup Cypress tests (Eg: /Users/<user>/Documents)
 * $ git clone https://github.com/yunlong276huang/hiq_cypress.git
-* $ cd HIQ_CYPRESS
+* $ cd hiq_cypress
 * $ npm install (This installs Cypress and other dependencies)the root of your project to ensure cypress is installed in the correct directory.
 * $ npx cypress -v (Check the version of Cypress)
 * $ npx cypress open  (Opens Cypress Test Runner) or
