@@ -11,6 +11,9 @@ It is designed for an introduction course on cypress at HiQ HiCollegue.
 * Nodejs should be installed (https://nodejs.org/en/). It also installs npm.
 * Check version of node (node -v) and npm (npm -v) from terminal
 
+# Recommended IDE #
+* Visual Studio Code (https://code.visualstudio.com/)
+
 # Download Tests from GitHub, Install Cypress and Run Cypress Tests #
 * Open Terminal
 * Go to path where you want to setup Cypress tests (Eg: /Users/<user>/Documents)
