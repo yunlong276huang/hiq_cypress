@@ -2,10 +2,11 @@ describe(Cypress.env('brand').toUpperCase() + ' - cookie', function () {
 
         before(function () {
             cy.visit('/', { failOnStatusCode: false })
-            cy.clearCookie('hiqCookie')         
+            cy.clearCookie('hiqCookie')        
         })
 
         after(function () {
+            cy.clearCookie('hiqCookie') 
         })
 
         it('Verify cookie banner', function () {
@@ -15,7 +16,8 @@ describe(Cypress.env('brand').toUpperCase() + ' - cookie', function () {
 
             // Verify cookie value udpated and banner disappears
             cy.getCookie('hiqCookie').should('have.property', 'value', '1')
-            cy.get('div#cookie-info').scrollIntoView({ force: true }).should('not.visible')
+            cy.get('div#cookie-info').should('not.visible')
+
         })
 
 })
