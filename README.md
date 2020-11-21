@@ -14,7 +14,7 @@ It is designed for an introduction course on cypress at HiQ HiCollegue.
 # Recommended IDE #
 * Visual Studio Code (https://code.visualstudio.com/)
 
-# Download Tests from GitHub, Install Cypress and Run Cypress Tests #
+# Download Tests from GitHub, Install Cypress and Open Cypress Tests #
 * Open Terminal
 * Go to path where you want to setup Cypress tests (Eg: /Users/<user>/Documents)
 * $ git clone https://github.com/yunlong276huang/hiq_cypress.git
@@ -26,9 +26,13 @@ It is designed for an introduction course on cypress at HiQ HiCollegue.
 
 # Run Cypress Tests #
 * Run one test or all tests from Cypress Test Runner (using GUI) on Chrome or Electron browser
+    * $ npx cypress open --env configFile=hiqsweden
+    * click run button to run all specs or
+    * click one spec to run that spec only
 * Tests can be run also using CLI
-* Examples of running tests on CLI: 
-    * $ npx cypress run (Run all test on Electron browser (Headless))
-    * $ npx cypress run --browser chrome (Run all test on Chrome browser)
+    * $ npx cypress run (Run all tests on Electron browser Headless)
+    * $ npx cypress run -b chrome (Run all tests on Chrome browser Header)
+    * $ npx cypress run -b chrome --headless (Run all tests on Chrome browser Headless)
+    * $ npx cypress run --env configFile=hiqsweden (To run tests per env or brand)
     * $ npx cypress run --spec 'cypress/integration/general/02_landing.spec.js'
-
+* Run test with custom command (To be configured in package.json)
