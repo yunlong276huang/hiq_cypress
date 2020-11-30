@@ -14,7 +14,7 @@
   "author": "Yunlong Huang",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^6.0.0",
+    "cypress": "^6.0.1",
     "prettier": "^2.1.2"
   },
   "dependencies": {
