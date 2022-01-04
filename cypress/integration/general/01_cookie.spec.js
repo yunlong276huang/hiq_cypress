@@ -1,7 +1,7 @@
 describe(Cypress.env('brand').toUpperCase() + ' - cookie', function () {
 
         before(function () {
-            cy.visit('/', { failOnStatusCode: false })
+            cy.visit('/', { timeout: 60000 })
             cy.clearCookie('hiqCookie')        
         })
 
