@@ -1,7 +1,7 @@
 describe(Cypress.env('brand').toUpperCase() + ' - landing page', function () {
 
 	beforeEach(function () {
-		cy.visit('/', { failOnStatusCode: false })
+		cy.visit('/', { timeout: 120000 })
 		// accept cookie by default
 		cy.setCookie('hiqCookie', '1')
 	})
@@ -101,31 +101,31 @@ describe(Cypress.env('brand').toUpperCase() + ' - landing page', function () {
 		var i
 		cy.get('.promotion-block:eq(0) > ul > li').should('have.length', Number(Cypress.env('hello-world-buttons')))
 		for (i = 0; i < items; i++) {
-			
+
 			cy.get('.promotion-block:eq(0) > ul > li')
 				.eq(i)
 				.find('a')
 				.should("be.visible")
 				.should('have.attr', 'href', Cypress.env('hello-world-button-' + i))
-		}		
+		}
 	})
 
-	it('Verify promotion questions block', function () {		
+	it('Verify promotion questions block', function () {
 		cy.get('.background-paper').scrollIntoView({ force: true }).should('be.visible')
 
 		// Verify promotion questions
 		var items = Number(Cypress.env('promotion-questions'))
 		var i
-		cy.get('.background-paper > div > div').should('have.length', Number(Cypress.env('promotion-questions'))+1)
+		cy.get('.background-paper > div > div').should('have.length', Number(Cypress.env('promotion-questions')) + 1)
 
 		for (i = 1; i <= items; i++) {
-			
+
 			cy.get('.background-paper > div > div')
-			    .eq(i-1)
+				.eq(i - 1)
 				.find('div:eq(0) > p')
 				.should('have.text', Cypress.env('promotion-question-' + i + '-no'))
 			cy.get('.background-paper > div > div')
-			    .eq(i-1)
+				.eq(i - 1)
 				.find('div:eq(1) > h2')
 				.should('contain.text', Cypress.env('promotion-question-' + i + '-heading'))
 		}
@@ -135,11 +135,11 @@ describe(Cypress.env('brand').toUpperCase() + ' - landing page', function () {
 			.eq(items).find('div > p').should('contain.text', Cypress.env('promotion-questions-reply-part-0'))
 		cy.get('.background-paper > div > div')
 			.eq(items).find('div > p').should('contain.text', Cypress.env('promotion-questions-reply-part-1'))
-		
+
 		// Verify curiosity button
 		cy.get('.background-paper > ul > li > a')
-		    .should("be.visible")
-		    .should('have.attr', 'href', Cypress.env('curiosity-button'))
+			.should("be.visible")
+			.should('have.attr', 'href', Cypress.env('curiosity-button'))
 	})
 
 	it('Verify join hiq block', function () {
@@ -148,14 +148,14 @@ describe(Cypress.env('brand').toUpperCase() + ' - landing page', function () {
 		// Verify join hiq block header and description
 		cy.get('.promotion-block:eq(2) > div:eq(0) > h2').should('be.visible').should('contain.text', 'Join HiQ!')
 		cy.get('.promotion-block:eq(2) > div:eq(1) > div')
-		    .should('be.visible').should('contain.text', 'Vi letar hela tiden efter smarta, kreativa och engagerade människor för anställning eller som underkonsulter via Tech Network.')
+			.should('be.visible').should('contain.text', 'Vi letar hela tiden efter smarta, kreativa och engagerade människor. Skicka in en ansökan redan idag så håller vi tummarna för att vi snart ser dig i ett av våra ledande team inom tech, IT, integration eller digitala tjänster!')
 
 		// Verify join hiq block buttons' url
 		var items = Number(Cypress.env('join-hiq-buttons'))
 		var i
 		cy.get('.promotion-block:eq(2) > ul > li').should('have.length', Number(Cypress.env('join-hiq-buttons')))
 		for (i = 0; i < items; i++) {
-			
+
 			cy.get('.promotion-block:eq(2) > ul > li')
 				.eq(i)
 				.find('a')
@@ -170,12 +170,12 @@ describe(Cypress.env('brand').toUpperCase() + ' - landing page', function () {
 		// Verify hiq digital knowledge tour block header and description
 		cy.get('.promotion-block:eq(3) > div:eq(0) > h2').should('be.visible').should('contain.text', 'HiQ Digital Knowledge Tour')
 		cy.get('.promotion-block:eq(3) > div:eq(1) > div')
-		    .should('be.visible').should('contain.text', 'Vi bjuder på matnyttiga och kostnadsfria webbinarier om tech, IT, design och integration.')
+			.should('be.visible').should('contain.text', 'Vi bjuder på matnyttiga och kostnadsfria webbinarier om tech, IT, design och integration.')
 
 		// Verify hiq digital knowledge tour block button' url
 		cy.get('.promotion-block:eq(3) > ul > li > a')
-		    .should("be.visible")
-			.should('have.attr', 'href', '/ideer/hiq-digital-knowledge-tour/')	
+			.should("be.visible")
+			.should('have.attr', 'href', '/ideer/hiq-digital-knowledge-tour/')
 
 	})
 
@@ -189,7 +189,7 @@ describe(Cypress.env('brand').toUpperCase() + ' - landing page', function () {
 		var items = Number(Cypress.env('meet-the-family-buttons'))
 		var i
 		cy.get('.promotion-block:eq(4) > ul > li').should('have.length', Number(Cypress.env('meet-the-family-buttons')))
-		for (i = 0; i < items; i++) {		
+		for (i = 0; i < items; i++) {
 			cy.get('.promotion-block:eq(4) > ul > li')
 				.eq(i)
 				.find('a')
@@ -209,7 +209,7 @@ describe(Cypress.env('brand').toUpperCase() + ' - landing page', function () {
 		var i
 		cy.get('.news-list:eq(1) > div > a').should('have.length', Number(Cypress.env('news-list-items')))
 		for (i = 0; i < items; i++) {
-			
+
 			cy.get('.news-list:eq(1) > div > a')
 				.eq(i)
 				.find('article')
@@ -217,9 +217,9 @@ describe(Cypress.env('brand').toUpperCase() + ' - landing page', function () {
 		}
 
 		cy.get('.news-show-all').should('be.visible')
-			.should('have.attr', 'href', '/nyheter/').should('have.text', 'Alla nyheter').click()
+			.should('have.attr', 'href', '/nyheter/').should('have.text', 'Alla nyheter').click({ force: true })
 		cy.url().should('include', '/nyheter/')
-		cy.go('back')		
+		cy.go('back')
 	})
 
 	it('Verify footer sections', function () {
@@ -241,17 +241,17 @@ describe(Cypress.env('brand').toUpperCase() + ' - landing page', function () {
 		for (i = 0; i < items; i++) {
 			if (i == 0) {
 				cy.get('.footer-list > li')
-				    .eq(i)
-				    .find('ul > li:eq(0) > h5')
-				    .should("be.visible")
+					.eq(i)
+					.find('ul > li:eq(0) > h5')
+					.should("be.visible")
 					.should('contain.text', Cypress.env('footer-list-item-' + i))
 			} else {
 				cy.get('.footer-list > li')
-				    .eq(i)
-				    .find('h5')
-				    .should("be.visible")
-				    .should('contain.text', Cypress.env('footer-list-item-' + i))
-			}	
+					.eq(i)
+					.find('h5')
+					.should("be.visible")
+					.should('contain.text', Cypress.env('footer-list-item-' + i))
+			}
 		}
 	})
 
@@ -267,12 +267,12 @@ describe(Cypress.env('brand').toUpperCase() + ' - landing page', function () {
 				.eq(i)
 				.find('small')
 				.should("be.visible")
-				.should('contain.text', Cypress.env('footer-contact-hiq-item-' + (i-1) + '-text'))
+				.should('contain.text', Cypress.env('footer-contact-hiq-item-' + (i - 1) + '-text'))
 			cy.get('.footer-list > li:eq(0) > ul > li')
 				.eq(i)
 				.find('small > a')
 				.should("be.visible")
-				.should('have.attr', 'href', Cypress.env('footer-contact-hiq-item-' + (i-1) + '-mail'))
+				.should('have.attr', 'href', Cypress.env('footer-contact-hiq-item-' + (i - 1) + '-mail'))
 		}
 	})
 
@@ -282,9 +282,9 @@ describe(Cypress.env('brand').toUpperCase() + ' - landing page', function () {
 		var items = Number(Cypress.env('footer-link-items'))
 		var i
 		cy.get('.footer-list > li:eq(1) > small > ul > li')
-		    .should('have.length', Number(Cypress.env('footer-link-items')))
+			.should('have.length', Number(Cypress.env('footer-link-items')))
 		for (i = 0; i < items; i++) {
-			if (i != 2 && i != 4) {
+			if (i != 0 && i != 3) {
 				cy.get('.footer-list > li:eq(1) > small > ul > li')
 					.eq(i)
 					.find('a')
@@ -327,13 +327,15 @@ describe(Cypress.env('brand').toUpperCase() + ' - landing page', function () {
 		cy.get('.footer-list > li:eq(3) > small > ul > li')
 			.should('have.length', Number(Cypress.env('footer-offices')))
 		for (i = 0; i < items; i++) {
-			cy.get('.footer-list > li:eq(3) > small > ul > li')
-				.eq(i)
-				.find('a')
-				.should("be.visible")
-				.should('have.text', Cypress.env('footer-office-' + i))
-				.should('have.attr', 'href', Cypress.env('footer-office-' + i + '-job-url'))
-	
+			if (i != 2) {
+				cy.get('.footer-list > li:eq(3) > small > ul > li')
+					.eq(i)
+					.find('a')
+					.should("be.visible")
+					.should('have.text', Cypress.env('footer-office-' + i))
+					.should('have.attr', 'href', Cypress.env('footer-office-' + i + '-job-url'))
+			}
+
 		}
 
 	})
