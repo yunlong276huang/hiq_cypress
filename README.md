@@ -22,14 +22,14 @@ It is designed for an introduction course on cypress at HiQ HiCollegue.
 * $ npm install (This installs Cypress and other dependencies)the root of your project to ensure cypress is installed in the correct directory.
 * $ npx cypress -v (Check the version of Cypress)
 * $ npx cypress open  (Opens Cypress Test Runner) or
-* $ npx cypress open --env configFile=hiqsweden
+* $ npx cypress open --env configFile=hiqSE
 
 # Run Cypress Tests #
 * Run one test or all tests from Cypress Test Runner (using GUI) on Chrome or Electron browser
-    * $ npx cypress open --env configFile=hiqsweden
+    * $ npx cypress open --env configFile=hiqSE
     * click run button to run all specs or
     * click one spec to run that spec only
 * Tests can be run also using CLI
     * $ npx cypress run (Run all tests on Electron browser Headless)
-    * $ npx cypress run --env configFile=hiqsweden (To run tests per env or brand)
+    * $ npx cypress run --env configFile=hiqSE (To run tests per env or brand)
 * Run test with custom command (To be configured in package.json)
