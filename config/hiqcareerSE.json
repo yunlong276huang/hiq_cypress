@@ -1,0 +1,14 @@
+{
+    "baseUrl": "https://career.hiq.se/",
+    "env": {
+        "brand":"hiqcareersweden", 
+        "career-menu-options":"5",
+            "career-menu-option-0":"/",
+            "career-menu-option-1":"/departments",
+            "career-menu-option-2":"/locations",
+            "career-menu-option-3":"/jobs",
+            "career-menu-option-4":"https://career.hiq.se/pages/leap"
+      },
+      "integrationFolder": "cypress/integration/career"
+  }
+  
