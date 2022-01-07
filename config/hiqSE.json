@@ -122,9 +122,6 @@
             "footer-hiq-familjen-7":"Thellio",
             "footer-hiq-familjen-7-url":"https://thellio.com/" 
       },
-      "reporterOptions": {
-          "runName":"hiqsweden"
-       },
       "integrationFolder": "cypress/integration/general"
   }
   
