@@ -9,7 +9,7 @@
   "responseTimeout": 30000,
   "trashAssetsBeforeRuns": true,
   "waitForAnimations": true,
-  "retries": 1,
+  "retries": 0,
   "reporter": "cypress-multi-reporters",
   "screenshotsFolder":"screenshots",
   "reporterOptions": {
