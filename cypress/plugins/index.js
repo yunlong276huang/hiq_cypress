@@ -29,7 +29,7 @@ module.exports = (on, config) => {
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
-  const file = config.env.configFile || 'hiqsweden'
+  const file = config.env.configFile || 'hiqSE'
   return getConfigurationByFile(file)
 
 }
