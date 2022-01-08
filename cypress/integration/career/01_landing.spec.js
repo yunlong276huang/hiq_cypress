@@ -35,9 +35,10 @@ describe(Cypress.env('brand').toUpperCase() + ' - landing page', function () {
                 .eq(i)
                 .find('a')
                 .should("be.visible")
-                .should('have.attr', 'href', Cypress.env('career-menu-option-' + i))
+                .should('have.text', Cypress.env('career-menu-option-' + i))
+                .should('have.attr', 'href', Cypress.env('career-menu-option-' + i + '-url'))
                 .click()
-            cy.url().should('include', Cypress.env('career-menu-option-' + i))
+            cy.url().should('include', Cypress.env('career-menu-option-' + i + '-url'))
             cy.visit('/')
         }
     })

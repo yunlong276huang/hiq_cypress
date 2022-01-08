@@ -3,11 +3,16 @@
     "env": {
         "brand":"hiqcareersweden", 
         "career-menu-options":"5",
-            "career-menu-option-0":"/",
-            "career-menu-option-1":"/departments",
-            "career-menu-option-2":"/locations",
-            "career-menu-option-3":"/jobs",
-            "career-menu-option-4":"https://career.hiq.se/pages/leap"
+            "career-menu-option-0":"Start",
+            "career-menu-option-0-url":"/",
+            "career-menu-option-1":"Departments",
+            "career-menu-option-1-url":"/departments",
+            "career-menu-option-2":"Locations",
+            "career-menu-option-2-url":"/locations",
+            "career-menu-option-3":"Jobs",
+            "career-menu-option-3-url":"/jobs",
+            "career-menu-option-4":"HiQ Leap – Trainee Program",
+            "career-menu-option-4-url":"https://career.hiq.se/pages/leap"
       },
       "integrationFolder": "cypress/integration/career"
   }
