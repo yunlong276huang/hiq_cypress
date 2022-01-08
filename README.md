@@ -34,7 +34,7 @@ $ npx cypress -v
 ```
 * Opens Cypress Test Runner
 ```console
-* $ npx cypress open
+$ npx cypress open
 ```
 * Opens Cypress Test Runner for one specific env
 ```console
@@ -67,6 +67,6 @@ $ npx cypress open --env configFile=hiqSE
     ```
     * Run tests per spec
     ```console
-    * $ npx cypress run --spec 'cypress/integration/general/02_landing.spec.js'
+    $ npx cypress run --env configFile=hiqSE --spec 'cypress/integration/general/02_landing.spec.js'
     ```
-* Run test with custom command (To be configured in package.json)
+* Run test with custom command
