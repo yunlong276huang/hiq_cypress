@@ -47,8 +47,10 @@ node_modules/
 *.html
 *.mp4
 *.png
+cypress/screenshots
 cypress/videos
 cypress/reports
+cypress/downloads
 
 # Igore IDEA stuffs
 .idea/
