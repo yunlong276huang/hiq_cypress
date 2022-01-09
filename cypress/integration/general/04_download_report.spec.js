@@ -10,7 +10,10 @@ describe(Cypress.env('brand').toUpperCase() + ' - download report', function () 
     })
 
     it('Verify can download 2019 yearly financial report', function () {
+        // Downlode the report
         cy.downloadFile("https://www.hiq.se/globalassets/02.-news/se/2020/hiq_ar19_webb.pdf", Cypress.config("downloadsFolder"), 'hiq_ar_2019.pdf')
+        
+        // Check the report exists 
         cy.readFile('cypress/downloads/hiq_ar_2019.pdf', { timeout: 60000 })
 
     })
