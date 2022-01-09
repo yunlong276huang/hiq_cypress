@@ -2,7 +2,7 @@
   "projectId": "dummy",
   "chromeWebSecurity": false,
   "defaultCommandTimeout":15000,
-  "pageLoadTimeout": 30000,
+  "pageLoadTimeout": 45000,
   "viewportWidth":1600,
   "viewportHeight":900,
   "requestTimeout":10000,
