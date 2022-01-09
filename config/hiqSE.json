@@ -120,7 +120,15 @@
             "footer-hiq-familjen-6":"Cogitel",
             "footer-hiq-familjen-6-url":"https://cogitel.se/",
             "footer-hiq-familjen-7":"Thellio",
-            "footer-hiq-familjen-7-url":"https://thellio.com/" 
+            "footer-hiq-familjen-7-url":"https://thellio.com/",
+        "contact-us-content-blocks":"4",
+            "contact-us-content-block-0-text":"HEAD OFFICE",
+            "contact-us-content-block-0-header":"Huvudkontor",
+            "contact-us-content-block-1-text":"BUSINESS DEVELOPMENT",
+            "contact-us-content-block-1-header":"Bli kund",
+            "contact-us-content-block-2-text":"KOMMUNIKATION",
+            "contact-us-content-block-2-header":"Mediafrågor",
+            "contact-us-content-block-3-header":"Investor Relations"
       },
       "integrationFolder": "cypress/integration/general"
   }
