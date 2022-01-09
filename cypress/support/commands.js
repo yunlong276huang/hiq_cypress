@@ -25,3 +25,7 @@
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
 require('cypress-downloadfile/lib/downloadFileCommand')
+
+Cypress.Commands.add('addTestContext', (title, value) => {
+	cy.once('test:after:run', test => addContext({ test }, { title, value }))
+})
