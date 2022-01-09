@@ -69,4 +69,12 @@ $ npx cypress open --env configFile=hiqSE
     ```console
     $ npx cypress run --env configFile=hiqSE --spec 'cypress/integration/general/02_landing.spec.js'
     ```
-* Run test with custom command
+* Run tests with a custom command
+    * For env hiqSE
+    ```console
+    $ npm run cypress:hiqSE
+    ```
+    * For env hiqcareerSE
+    ```console
+    $ npm run cypress:hiqcareerSE
+    ```
