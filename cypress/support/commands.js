@@ -25,14 +25,3 @@
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
 require('cypress-downloadfile/lib/downloadFileCommand')
-
-Cypress.Commands.add('downloadFile', (url, directory, fileName) => {
-    return cy.getCookies().then((cookies) => {
-      return cy.task('downloadFile', {
-        url,
-        directory,
-        cookies,
-        fileName,
-      })
-    })
-})
